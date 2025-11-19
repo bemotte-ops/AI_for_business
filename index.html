@@ -125,13 +125,39 @@
       color: #6b7280;
       font-size: 0.9rem;
     }
+.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 1.5rem;
+  }
+  .header-content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: calc(100% - 100px);
+  }
+  header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  @media (max-width: 768px) {
+    .logo {
+      width: 60px;
+      margin-right: 1rem;
+ }
+  }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>ИИ для строительного бизнеса: как это работает на практике</h1>
-  <p>Закупки в Китае → Производство в РФ → Продажи в РФ и Беларуси<br>Без «воды» — только техническая реализация и бизнес-эффект</p>
+  <img src="photo_5395328876785300521_c.jpg" alt="Логотип" class="logo">
+  <div class="header-content">
+    <h1>ИИ для строительного бизнеса: как это работает на практике</h1>
+    <p>Закупки в Китае → Производство в РФ → Продажи в РФ и Беларуси<br>Без «воды» — только техническая реализация и бизнес-эффект</p>
+  </div>
 </header>
 
 <div class="container">
@@ -363,4 +389,5 @@
 </footer>
 
 </body>
+
 </html>
